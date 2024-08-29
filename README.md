@@ -16,6 +16,17 @@ This project fine-tunes a LLaMA-2 model to analyze car sales conversations. The 
 ![Architecture Diagram](model_arc.svg)  
 _Architecture diagram._
 
+## **Output**
+
+![output](images/1.jpeg)  
+![output](images/2.jpeg)  
+![output](images/3.jpeg)  
+![output](images/4.jpeg)  
+![output](images/5.jpeg)  
+![output](images/6.jpeg)  
+![output](images/7.jpeg)  
+![output](images/8.jpeg)  
+
 ## **Getting Started**
 
 ### **Prerequisites**
