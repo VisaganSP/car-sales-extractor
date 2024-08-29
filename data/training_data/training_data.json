@@ -1,0 +1,796 @@
+{
+    "train": [
+      {
+        "prompt": "Extract the car type, fuel type, transmission type, and color: 'I'm really looking for something spacious and safe, safety first. Maybe a compact SUV, yes, compact SUV. And maybe like a Mahindra XUV or something similar. No petrol, please. Diesel only. I don’t, I don’t mind, whatever is best for my budget. So can you now, um, check if we have SUVs that fit my requirements? Okay, white is okay.'",
+        "completion": {
+          "Car Type": "Compact SUV",
+          "Fuel Type": "Diesel",
+          "Transmission Type": "Any",
+          "Color": "White"
+        }
+      },
+      {
+        "prompt": "Extract the car make and model: 'What about, maybe, a Creta? Yes, it’s a 2019 model with good history.'",
+        "completion": {
+          "Car Make": "Hyundai",
+          "Car Model": "Creta",
+          "Make Year": "2019"
+        }
+      },
+      {
+        "prompt": "Extract the budget: 'I have a budget of about Rs. 800,000, and I'm really looking for something spacious and safe.'",
+        "completion": {
+          "Budget": "Rs. 800,000"
+        }
+      },
+    
+      {
+        "prompt": "Extract the budget, car type, fuel type, transmission type, and warranty: 'I'm looking for a car within a budget of Rs. 600,000. My primary concerns are safety and proper maintenance. I don't have any specific preference for the vehicle size or type. I don't have a preference for that either. Just show me what fits my budget and requirements. Once you purchase a vehicle, you will have a one-year or 15,000 kilometers warranty on the engine and gearbox. Additionally, for three months or 5,000 kilometers, we cover the AC, electrical, and fuel systems.'",
+        "completion": {
+          "Budget": "Rs. 600,000",
+          "Car Type": "Any",
+          "Fuel Type": "Any",
+          "Transmission Type": "Any",
+          "Warranty Engine and Gearbox": "1 year or 15,000 km",
+          "Warranty AC and Electrical": "3 months or 5,000 km"
+        }
+      },
+
+      {
+            "prompt": "Extract the car make, model, make year, mileage, and price: 'Here is a 2015 Honda City. It's a well-maintained sedan with 1,20,000 kilometers on it. This one is priced at Rs. 6,97,000.'",
+            "completion": {
+              "Car Make": "Honda",
+              "Car Model": "City",
+              "Make Year": "2015",
+              "Mileage": "1,20,000 km",
+              "Price": "Rs. 6,97,000"
+            }
+          },
+          {
+            "prompt": "Extract the customer objections and vehicle condition: 'It has a few minor scratches and the paint job isn't perfect. But mechanically, it's in excellent condition. The scratches and paint job are a bit concerning.'",
+            "completion": {
+              "Objections": "Scratches and paint job",
+              "Condition": "Mechanically excellent"
+            }
+          },
+          {
+            "prompt": "Extract the car make, model, make year, and mileage: 'We also have a 2014 Maruti Suzuki Ciaz. It's slightly older but has fewer kilometers on it.'",
+            "completion": {
+              "Car Make": "Maruti Suzuki",
+              "Car Model": "Ciaz",
+              "Make Year": "2014",
+              "Mileage": "Less than Honda City"
+            }
+          },
+          {
+            "prompt": "Extract the resale value details: 'For example, if you choose the Honda City, after one year, we will buy it back for Rs. 5,00,000, after two years for Rs. 4,32,000, and after three years for Rs. 4,00,000. This is subject to the vehicle not exceeding 10,000 kilometers per year and being serviced at authorized centers.'",
+            "completion": {
+              "Resale Value Year 1": "Rs. 5,00,000",
+              "Resale Value Year 2": "Rs. 4,32,000",
+              "Resale Value Year 3": "Rs. 4,00,000",
+              "Conditions": "10,000 km/year, serviced at authorized centers"
+            }
+          },
+          {
+            "prompt": "Extract the test drive details: 'You can either come to our showroom or book a home test drive. The home test drive slots are available within one or two days. I live about five kilometers from here. Can we arrange a home test drive? Certainly, sir. I will book a slot for you. You will receive a confirmation shortly.'",
+            "completion": {
+              "Test Drive Type": "Home",
+              "Distance": "5 km",
+              "Confirmation": "Shortly"
+            }
+          },
+              {
+                "prompt": "Extract the car model, registration details, and price: 'This one here is priced at 5,39,000 rupees, and that one is 5,24,000 rupees. Both are West Bengal registered.'",
+                "completion": {
+                  "Car Model 1": "Unknown",
+                  "Price 1": "Rs. 5,39,000",
+                  "Car Model 2": "Unknown",
+                  "Price 2": "Rs. 5,24,000",
+                  "Registration": "West Bengal"
+                }
+              },
+              {
+                "prompt": "Extract the fuel type, registration, and price details: 'You might want to look at the Alto. With a budget of 3.5 lakhs, you won't find a Venue or I-20. The Venue starts from 9 lakhs. The I-20 starts from 5 lakhs minimum.'",
+                "completion": {
+                  "Car Type 1": "Alto",
+                  "Fuel Type": "Petrol",
+                  "Price Range 1": "Rs. 3.5 lakhs",
+                  "Car Type 2": "Venue",
+                  "Price Range 2": "Rs. 9 lakhs",
+                  "Car Type 3": "I-20",
+                  "Price Range 3": "Rs. 5 lakhs",
+                  "Registration": "Karnataka"
+                }
+              },
+              {
+                "prompt": "Extract the warranty details: 'The engine and gearbox come with a one-year guarantee. We ensure the vehicle has passed 200 checkpoints, and the RC transfer and one-year insurance are included.'",
+                "completion": {
+                  "Warranty Engine and Gearbox": "1 year",
+                  "Checkpoints Passed": "200",
+                  "RC Transfer": "Included",
+                  "Insurance": "1 year"
+                }
+              },
+              {
+                "prompt": "Extract the car model, make year, mileage, and warranty details: 'What about the Swift diesel? It's available for 100,000 Km. It's a 2011 model with 1,22,000 Km on it. And the second one? That one has 3,21,000 Km on it.'",
+                "completion": {
+                  "Car Model 1": "Swift Diesel",
+                  "Make Year 1": "2011",
+                  "Mileage 1": "1,22,000 km",
+                  "Warranty 1": "100,000 km",
+                  "Car Model 2": "Unknown",
+                  "Mileage 2": "3,21,000 km"
+                }
+              },
+              {
+                "prompt": "Extract the car model, mileage, and condition details: 'What about the Tiago? The Tiago has 16,000 Km on it. It's white, a Tata Tiago, with 86,000 Km. It's a diesel and comes at a fixed price with no negotiation. The warranty covers 10,000 Km, and it's already serviced with an oil change. The name transfer will be done to your home address, and we'll provide you with the agreement.'",
+                "completion": {
+                  "Car Model": "Tata Tiago",
+                  "Mileage": "86,000 km",
+                  "Fuel Type": "Diesel",
+                  "Warranty": "10,000 km",
+                  "Condition": "Serviced with oil change",
+                  "Name Transfer": "To home address"
+                }
+              },
+              {
+                "prompt": "Extract the car model, make year, fuel type, and price: 'This is a 2010 model, diesel, priced at Rs. 340,000. The petrol version costs Rs. 662,000. The starting model is Rs. 662,000.'",
+                "completion": {
+                  "Make Year": "2010",
+                  "Fuel Type 1": "Diesel",
+                  "Price 1": "Rs. 340,000",
+                  "Fuel Type 2": "Petrol",
+                  "Price 2": "Rs. 662,000"
+                }
+              },
+              {
+                "prompt": "Extract the customer objections and vehicle condition: 'Hmm, the paint job seems a bit off, and there are some scratches. Also, the interior isn't very clean. I apologize for that. We can have the paint job touched up and the interior thoroughly cleaned before delivery. Would that be acceptable?'",
+                "completion": {
+                  "Objections": "Paint job and interior cleanliness",
+                  "Condition": "Paint job touch-up and interior cleaning offered"
+                }
+              },
+              {
+                "prompt": "Extract the payment and loan details: 'I'm looking for a loan. I work in agriculture. Do you have any outstanding loans to pay off? Yes, I do.'",
+                "completion": {
+                  "Payment Method": "Loan",
+                  "Occupation": "Agriculture",
+                  "Outstanding Loans": "Yes"
+                }
+              },
+          
+              {
+                "prompt": "Extract the car make, model, and registration details: 'The Swift 2019 model, right? Is it the ZXI variant you're interested in? It's not the WB registration, it's the KN registration.'",
+                "completion": {
+                  "Car Make": "Maruti Suzuki",
+                  "Car Model": "Swift",
+                  "Variant": "ZXI",
+                  "Make Year": "2019",
+                  "Registration": "KN"
+                }
+              },
+              {
+                "prompt": "Extract the condition and transmission details: 'It has been repainted, but rest assured, it hasn't been in any accidents. There are some scratches and dents, but nothing major. This model is automatic, not manual.'",
+                "completion": {
+                  "Condition": "Repainted, some scratches and dents, no accidents",
+                  "Transmission": "Automatic"
+                }
+              },
+              {
+                "prompt": "Extract the car make, model, make year, and price: 'Here we have a 2022 model ZXI, ZXI Plus, priced at 8 lakhs.'",
+                "completion": {
+                  "Car Make": "Maruti Suzuki",
+                  "Car Model": "Swift",
+                  "Variant": "ZXI Plus",
+                  "Make Year": "2022",
+                  "Price": "Rs. 8,00,000"
+                }
+              },
+              {
+                "prompt": "Extract the car make, model, make year, mileage, and price: 'It's a 2022 model with only 16,000 kms on it. It's a single-owner, complete top-end model, ZXI Plus, and the price has dropped to 8 lakhs.'",
+                "completion": {
+                  "Make Year": "2022",
+                  "Mileage": "16,000 km",
+                  "Ownership": "Single-owner",
+                  "Model": "ZXI Plus",
+                  "Price": "Rs. 8,00,000"
+                }
+              },
+              {
+                "prompt": "Extract the warranty and service details: 'This car is priced at 6,69,300 and it comes with a 1-year warranty for the engine and gearbox. It's already been serviced at 12,000 kms, and the next service is due at 22,000 kms.'",
+                "completion": {
+                  "Price": "Rs. 6,69,300",
+                  "Warranty": "1 year on engine and gearbox",
+                  "Last Service Mileage": "12,000 km",
+                  "Next Service Due": "22,000 km"
+                }
+              },
+              {
+                "prompt": "Extract the booking amount and loan process details: 'But why is the booking amount 10,000? It's because of the loan process, sir.'",
+                "completion": {
+                  "Booking Amount": "Rs. 10,000",
+                  "Reason": "Loan process"
+                }
+              },
+             {
+                "prompt": "Extract the budget and vehicle preferences: 'We are looking for vehicles actually, automatic. Budget of 6 to 7, 5 to 6, 7.'",
+                "completion": {
+                  "Budget Range": "6 to 7 lakhs",
+                  "Vehicle Preference": "Automatic"
+                }
+              },
+              {
+                "prompt": "Extract the car models mentioned and their prices: '21 model Swift is there. Swift ZXI plus. 8 lakhs 15 thousand.'",
+                "completion": {
+                  "Car Model 1": "Swift ZXI Plus",
+                  "Price 1": "Rs. 8,15,000"
+                }
+              },
+              {
+                "prompt": "Extract the car models and price details: '6412 range. 790. That is a booked vehicle 8,20,000. 821 model. Sir that is 950. Fixed price.'",
+                "completion": {
+                  "Car Model 1": "6412",
+                  "Price 1": "Rs. 8,20,000",
+                  "Car Model 2": "821",
+                  "Price 2": "Rs. 950"
+                }
+              },
+              {
+                "prompt": "Extract the warranty and service details: 'You will get the benefit of YoCars warranty. Like 1 year warranty of engine and gearbox 1 year or else 15,000 km. And the RC transfer is included.'",
+                "completion": {
+                  "Warranty Engine and Gearbox": "1 year or 15,000 km",
+                  "RC Transfer": "Included"
+                }
+              },
+              {
+                "prompt": "Extract the customer objections and vehicle condition: 'Hmm, I see some scratches on the paint job here. And the cleanliness inside isn't up to the mark. Also, I hear a slight noise from the engine.'",
+                "completion": {
+                  "Objections": "Scratches on paint job, cleanliness, engine noise",
+                  "Condition": "Detailing and check-up offered"
+                }
+              },
+              {
+                "prompt": "Extract the vehicle price and driven details: '6,23,000. 72,000 driven single owner.'",
+                "completion": {
+                  "Price": "Rs. 6,23,000",
+                  "Mileage": "72,000 km",
+                  "Owner": "Single owner"
+                }
+              },
+              {
+                "prompt": "Extract the buy-back details: 'You will get 3 years of buy back also. For 2 years buy back. And if you need 3 years buy back it's such as see in 2 years you will get for 12 months you will get 4,30,000.'",
+                "completion": {
+                  "Buy-Back Duration 1": "2 years",
+                  "Buy-Back Amount 1": "Rs. 4,30,000",
+                  "Buy-Back Duration 2": "3 years",
+                  "Buy-Back Amount 2": "Not specified"
+                }
+              },
+              {
+                "prompt": "Extract the service and tire condition details: 'All tires are 85% conditions including stepney. Stepney is 95%. It's a complete showroom service.'",
+                "completion": {
+                  "Tire Condition": "85%",
+                  "Stepney Condition": "95%",
+                  "Service Type": "Showroom service"
+                }
+              },
+              {
+                "prompt": "Extract the final negotiation offer: 'Can we close the deal by around 5.8? Is there any option?'",
+                "completion": {
+                  "Negotiation Offer": "Rs. 5.8 lakhs"
+                }
+              },
+               {
+                "prompt": "Extract the customer’s preference for car features: 'You're particularly looking for a 7-seater only, right, sir?' 'Prefer manual.' 'Diesel.'",
+                "completion": {
+                  "Car Type": "7-seater",
+                  "Transmission": "Manual",
+                  "Fuel Type": "Diesel"
+                }
+              },
+              {
+                "prompt": "Extract the available car model and its status: 'The Honda Mobilio is a 7-seater.' 'Unfortunately, it's already booked, sir.'",
+                "completion": {
+                  "Car Model": "Honda Mobilio",
+                  "Status": "Booked"
+                }
+              },
+              {
+                "prompt": "Extract the included package details: 'This package includes registration, RC transfer, and insurance. It's a fixed price, no negotiation.'",
+                "completion": {
+                  "Package Includes": "Registration, RC transfer, Insurance",
+                  "Price Type": "Fixed, No negotiation"
+                }
+              },
+              {
+                "prompt": "Extract the service cost and status: 'Around 14,000.' 'All vehicles are serviced regularly.'",
+                "completion": {
+                  "Service Cost": "Rs. 14,000",
+                  "Service Status": "Regularly serviced"
+                }
+              },
+              {
+                "prompt": "Extract the financial information and terms: 'It depends on the car and the financing terms.' 'Yes, third-party finance options are available.'",
+                "completion": {
+                  "Financing Type": "Third-party",
+                  "Financial Cost": "Depends on car and terms"
+                }
+              },
+              {
+                "prompt": "Extract the mileage and car details: 'It's a 7-seater. You can sit and see for yourself.' 'Its mileage is around 12-13 km/l.' 'It has a 1.4-litre engine.'",
+                "completion": {
+                  "Seating Capacity": "7-seater",
+                  "Mileage": "12-13 km/l",
+                  "Engine Size": "1.4-litre"
+                }
+              },
+              {
+                "prompt": "Extract the car’s condition and service details: 'No, it's a non-accidental vehicle.' 'Yes, we have all the service reports. All vehicles are in good service condition.'",
+                "completion": {
+                  "Accident Status": "Non-accidental",
+                  "Service Reports": "Available"
+                }
+              },
+              {
+                "prompt": "Extract the last service details: 'It was serviced by us 10-15 days ago.'",
+                "completion": {
+                  "Last Service": "10-15 days ago"
+                }
+              },
+              {
+                "prompt": "Extract the price and owner details: '20,000.' 'Second owner, sir.'",
+                "completion": {
+                  "Price": "Rs. 20,000",
+                  "Owner": "Second owner"
+                }
+              },
+              {
+                "prompt": "Extract the customer’s concerns and salesperson’s response: 'I see some scratches on the paint. And the interior doesn't seem very clean.' 'Also, I hear some noise from the engine. Is that normal?'",
+                "completion": {
+                  "Customer Concerns": [
+                    "Scratches on paint",
+                    "Dirty interior",
+                    "Engine noise"
+                  ],
+                  "Salesperson Response": "Arranging thorough cleaning and touch-up, mechanic check-up before delivery"
+                }
+              },
+              {
+                "prompt": "Extract the customer’s preference for car features: 'You're particularly looking for a 7-seater only, right, sir?' 'Prefer manual.' 'Diesel.'",
+                "completion": {
+                  "Car Type": "7-seater",
+                  "Transmission": "Manual",
+                  "Fuel Type": "Diesel"
+                }
+              },
+              {
+                "prompt": "Extract the available car model and its status: 'The Honda Mobilio is a 7-seater.' 'Unfortunately, it's already booked, sir.'",
+                "completion": {
+                  "Car Model": "Honda Mobilio",
+                  "Status": "Booked"
+                }
+              },
+              {
+                "prompt": "Extract the included package details: 'This package includes registration, RC transfer, and insurance. It's a fixed price, no negotiation.'",
+                "completion": {
+                  "Package Includes": "Registration, RC transfer, Insurance",
+                  "Price Type": "Fixed, No negotiation"
+                }
+              },
+              {
+                "prompt": "Extract the service cost and status: 'Around 14,000.' 'All vehicles are serviced regularly.'",
+                "completion": {
+                  "Service Cost": "Rs. 14,000",
+                  "Service Status": "Regularly serviced"
+                }
+              },
+              {
+                "prompt": "Extract the financial information and terms: 'It depends on the car and the financing terms.' 'Yes, third-party finance options are available.'",
+                "completion": {
+                  "Financing Type": "Third-party",
+                  "Financial Cost": "Depends on car and terms"
+                }
+              },
+              {
+                "prompt": "Extract the mileage and car details: 'It's a 7-seater. You can sit and see for yourself.' 'Its mileage is around 12-13 km/l.' 'It has a 1.4-litre engine.'",
+                "completion": {
+                  "Seating Capacity": "7-seater",
+                  "Mileage": "12-13 km/l",
+                  "Engine Size": "1.4-litre"
+                }
+              },
+              {
+                "prompt": "Extract the car’s condition and service details: 'No, it's a non-accidental vehicle.' 'Yes, we have all the service reports. All vehicles are in good service condition.'",
+                "completion": {
+                  "Accident Status": "Non-accidental",
+                  "Service Reports": "Available"
+                }
+              },
+              {
+                "prompt": "Extract the last service details: 'It was serviced by us 10-15 days ago.'",
+                "completion": {
+                  "Last Service": "10-15 days ago"
+                }
+              },
+              {
+                "prompt": "Extract the price and owner details: '20,000.' 'Second owner, sir.'",
+                "completion": {
+                  "Price": "Rs. 20,000",
+                  "Owner": "Second owner"
+                }
+              },
+              {
+                "prompt": "Extract the customer’s concerns and salesperson’s response: 'I see some scratches on the paint. And the interior doesn't seem very clean.' 'Also, I hear some noise from the engine. Is that normal?'",
+                "completion": {
+                  "Customer Concerns": [
+                    "Scratches on paint",
+                    "Dirty interior",
+                    "Engine noise"
+                  ],
+                  "Salesperson Response": "Arranging thorough cleaning and touch-up, mechanic check-up before delivery"
+                }
+              },
+              {
+                "prompt": "Extract the car model and condition details: 'Here we have a Tigor for you. Please note that there are some scratches and this door has been repainted. This is a complete door replacement.'",
+                "completion": {
+                  "Car Model": "Tigor",
+                  "Condition": "Scratches, Door repainted, Complete door replacement"
+                }
+              },
+              {
+                "prompt": "Extract the mileage details and expected performance: 'The company claims a mileage of 23 km/l, but realistically, you can expect around 19-20 km/l.'",
+                "completion": {
+                  "Company Mileage Claim": "23 km/l",
+                  "Realistic Mileage": "19-20 km/l"
+                }
+              },
+              {
+                "prompt": "Extract the car features: 'It features a keyless start and cruise control. It also has two airbags and an automatic wiper system. The headlights are automatic, and it comes with both Android Auto and Apple CarPlay, though they are wired. It also has a reverse camera.'",
+                "completion": {
+                  "Features": [
+                    "Keyless start",
+                    "Cruise control",
+                    "Two airbags",
+                    "Automatic wiper system",
+                    "Automatic headlights",
+                    "Android Auto (wired)",
+                    "Apple CarPlay (wired)",
+                    "Reverse camera"
+                  ]
+                }
+              },
+              {
+                "prompt": "Extract the previous owner details and service history: 'The previous owner has been transferred to Rachel, but the car has been well-maintained with a service history up to 34,000 km.'",
+                "completion": {
+                  "Previous Owner": "Transferred to Rachel",
+                  "Service History": "Up to 34,000 km"
+                }
+              },
+              {
+                "prompt": "Extract the driving modes: 'It has an eco mode and a city drive mode. In eco mode, you get better mileage.'",
+                "completion": {
+                  "Driving Modes": [
+                    "Eco mode",
+                    "City drive mode"
+                  ]
+                }
+              },
+              {
+                "prompt": "Extract the car variants and sunroof details: 'This is the top-end model, available in XZ and XZ Plus variants. The XZ Plus is the top model. The sunroof is optional and costs an additional 80,000 rupees.'",
+                "completion": {
+                  "Variants": [
+                    "XZ",
+                    "XZ Plus"
+                  ],
+                  "Sunroof": "Optional, Additional cost of 80,000 rupees"
+                }
+              },
+              {
+                "prompt": "Extract the boot space and tire details: 'The boot space is 345 liters. The spare tire is new and unused. The front tire weighs around 50 kg, and the rear tire is about 250 kg.'",
+                "completion": {
+                  "Boot Space": "345 liters",
+                  "Tire Details": {
+                    "Front Tire Weight": "50 kg",
+                    "Rear Tire Weight": "250 kg"
+                  }
+                }
+              },
+              {
+                "prompt": "Extract the buyback options and engine details: 'This vehicle comes with a buyback option for 1, 2, or 3 years. The buyback is assured by the company. There is no touch-up on the bumper, and the engine is 1.5 liters.'",
+                "completion": {
+                  "Buyback Options": [
+                    "1 year",
+                    "2 years",
+                    "3 years"
+                  ],
+                  "Engine Size": "1.5 liters",
+                  "Buyback Assurance": "Assured by the company"
+                }
+              },
+              {
+                "prompt": "Extract the engine tampering and authenticity details: 'No, sir. The engine is not tampered with. We ensure 100% authenticity. YoCars does not procure tampered vehicles.'",
+                "completion": {
+                  "Engine Tampering": "Not tampered with",
+                  "Authenticity": "100% authenticity ensured"
+                }
+              },
+              {
+                "prompt": "Extract the pricing and warranty details: 'The price has already reached Rs. 9,97,000 on the screen. The price has dropped almost to Rs. 47,000. Benefits are 1 year warranty plus buyback 3 years, 2 years buyback. If you want 3 years you can extend. You also have extended warranty. Plus RC transfer is included. Plus for this vehicle, comprehensive insurance is valid.'",
+                "completion": {
+                  "Price": "Rs. 9,97,000",
+                  "Discounted Price": "Rs. 47,000",
+                  "Warranty": [
+                    "1 year warranty",
+                    "3 years buyback",
+                    "2 years buyback",
+                    "Extended warranty available"
+                  ],
+                  "Additional Benefits": [
+                    "RC transfer included",
+                    "Comprehensive insurance included"
+                  ]
+                }
+              },
+              {
+                "prompt": "Extract the car details and pricing: 'The price is 10.72 lakhs for the 2018 model with 41,000 km driven. It's a single owner, automatic car. The original price was 9.94 lakhs, but they mentioned a 1 lakh discount on the app.'",
+                "completion": {
+                  "Price": "10.72 lakhs",
+                  "Model Year": "2018",
+                  "Mileage": "41,000 km",
+                  "Owner": "Single owner",
+                  "Transmission": "Automatic",
+                  "Original Price": "9.94 lakhs",
+                  "Discount": "1 lakh"
+                }
+              },
+              {
+                "prompt": "Extract the feature details and additional costs: 'It has 2 ventilators installed and an AC vent. Regarding the charging port, you can install one, but there is no wireless charger available. You would have to plug it in. If you want to install a wireless charger, it would be helpful if it's from the OEM. If it's from the outer market, it will come with a 3-month warranty.'",
+                "completion": {
+                  "Features": [
+                    "2 ventilators",
+                    "AC vent"
+                  ],
+                  "Charging Port": "No wireless charger available; can install one",
+                  "Wireless Charger Cost": "Approximately 10,000",
+                  "Wireless Charger Warranty": "3 months (if from outer market)"
+                }
+              },
+              {
+                "prompt": "Extract the details about the shift lock release: 'The shift lock release is for safety in case of a peak or hill support.'",
+                "completion": {
+                  "Shift Lock Release": "For safety in peak or hill support"
+                }
+              },
+              {
+                "prompt": "Extract the warranty details: 'After taking a car deal, you will be getting a warranty for 1 year and a comprehensive warranty for 3 months. The 1 year or 12,000 km warranty covers the engine and gearbox.'",
+                "completion": {
+                  "Warranty": [
+                    "1 year or 12,000 km (engine and gearbox)",
+                    "Comprehensive warranty for 3 months"
+                  ]
+                }
+              },
+              {
+                "prompt": "Extract the extended warranty option details: 'There is no option for an extended warranty because we are already offering a 10% discount. The extended warranty depends on the car model.'",
+                "completion": {
+                  "Extended Warranty Option": "Not available due to 10% discount",
+                  "Extended Warranty Details": "Depends on car model"
+                }
+              },
+              {
+                "prompt": "Extract the extended warranty cost and coverage: 'For some models, it could be around 1 lakh for 2 years or 24,000 km, plus an additional 12 months for comprehensive electrical warranty.'",
+                "completion": {
+                  "Extended Warranty Cost": "Around 1 lakh for 2 years or 24,000 km",
+                  "Additional Coverage": "12 months comprehensive electrical warranty"
+                }
+              },
+              {
+                "prompt": "Extract the test drive and registration details: 'If you want to test drive, you can do it. The price includes everything: registration for the Karnataka number, RC transfer, emission pass tax, and more.'",
+                "completion": {
+                  "Test Drive": "Available",
+                  "Included in Price": [
+                    "Registration for Karnataka number",
+                    "RC transfer",
+                    "Emission pass tax"
+                  ]
+                }
+              },
+              {
+                "prompt": "Extract the timeline for registration and road tax details: 'It will take about 150 days for the Karnataka registration. You will need to pay the road tax, and then you will get it registered in Karnataka. The RC transfer will take about 50 days.'",
+                "completion": {
+                  "Karnataka Registration Time": "About 150 days",
+                  "Road Tax": "Applicable for Karnataka registration",
+                  "RC Transfer Time": "About 50 days"
+                }
+              },
+              {
+                "prompt": "Extract the service details before delivery: 'The price includes one service before delivery, and the car is already serviced.'",
+                "completion": {
+                  "Service Before Delivery": "Included",
+                  "Current Service Status": "Already serviced"
+                }
+              },
+              {
+                "prompt": "Extract the details about the vehicle's condition: 'It's in an open area, but we will clean it before delivery. I also noticed some scratches on the rear bumper. We will ensure that all scratches are taken care of before delivery.'",
+                "completion": {
+                  "Current Condition": "In an open area",
+                  "Pre-Delivery Cleaning": "Will be cleaned before delivery",
+                  "Scratches on Rear Bumper": "Will be taken care of before delivery"
+                }
+              },
+              {
+                "prompt": "Extract the salesperson's contact details and test drive arrangement: 'Sure, it's 94******310. I will arrange a test drive for you in Whitefield. You can do a test drive for both cars, and then you can make your decision. The full amount is refundable.'",
+                "completion": {
+                  "Contact Number": "94******310",
+                  "Test Drive Location": "Whitefield",
+                  "Test Drive Options": "Both cars available for test drive",
+                  "Refund Policy": "Full amount refundable"
+                }
+              },
+              {
+                "prompt": "Extract the home test drive arrangement details: 'If we take the other direction, it could be 37 kilometers, or 34 kilometers if it's the other route. Anything around will be below 40 kilometers. I will speak to my manager and arrange for a test drive.'",
+                "completion": {
+                  "Home Test Drive Distance": "Below 40 kilometers",
+                  "Manager Arrangement": "Will arrange for test drive"
+                }
+              },
+              {
+                "prompt": "Extract the time details for the test drive arrangement: 'Morning around 10 would be good. I will arrange it for you. Perfect. I will manage it for 11 o'clock on Thursday morning.'",
+                "completion": {
+                  "Test Drive Time": "11 o'clock on Thursday morning"
+                }
+              },
+              {
+                "prompt": "Extract the inspection request details: 'Can you check the driver and the air light? Don't touch anything; it's completely brand new.'",
+                "completion": {
+                  "Inspection Request": [
+                    "Driver",
+                    "Air light"
+                  ],
+                  "Condition": "Completely brand new"
+                }
+            },
+              {
+                "prompt": "Extract the registration process details: 'Hello sir, how are you today? I'm good, thank you. What will be the registration process? We will get the vehicle registered to KN. It's included in the price. Everything is included.'",
+                "completion": {
+                  "Registration Process": "Vehicle registered to KN",
+                  "Cost Inclusion": "Included in the price"
+                }
+              },
+              {
+                "prompt": "Extract the test drive information: 'Okay, can we take a test drive of your car? Yes, of course. Please have a seat. Have you visited YoCars Park before? No, no. This is for my family. They want to check it out.'",
+                "completion": {
+                  "Test Drive Availability": "Yes",
+                  "Customer Reason": "Family wants to check it out",
+                  "Previous Visit": "No"
+                }
+              },
+              {
+                "prompt": "Extract the sales assistant details: 'Great. Prashant is one of our best. Please have a seat. Prashant, I am Pooch Rai. They are interested in a second car and they like YoCars.'",
+                "completion": {
+                  "Sales Assistant Name": "Prashant",
+                  "Sales Assistant's Assistant Name": "Pooch Rai",
+                  "Customer Interest": "Interested in a second car, likes YoCars"
+                }
+              },
+              {
+                "prompt": "Extract the contact number request: 'Yes, sir. Could I have your contact number for our records? 7******139.'",
+                "completion": {
+                  "Contact Number Request": "Yes",
+                  "Provided Contact Number": "7******139"
+                }
+              },
+              {
+                "prompt": "Extract the vehicle inspection and driving feedback: 'Sir, there is a stone. I think it will hit there. Slowly, sir. I have left you, ma'am. It has been leaked for the first time. It's too loose. There was greasing and all. Is it too loose? No, no. I mean, we brought an item. So, we have compared it. It differs from brand to brand. The steering is a bit tight in the Volkswagen, but it depends on the company. In the Tata, it is much smoother. I can turn it with one finger.'",
+                "completion": {
+                  "Inspection Feedback": "Steering is a bit tight, varies by brand",
+                  "Comparison": "Volkswagen steering tight, Tata smoother"
+                }
+              },
+              {
+                "prompt": "Extract the vibration and clutch feedback: 'What is the vibration? Light vibration? Clutch in the lower gear is vibrating. Do you want to try?'",
+                "completion": {
+                  "Vibration Feedback": "Light vibration",
+                  "Clutch Feedback": "Vibrating in lower gear"
+                }
+              },
+              {
+                "prompt": "Extract the engine and power details: 'It is not in gear. It started. You can see the power of the accelerator. It is 1.2. It is a powerful engine.'",
+                "completion": {
+                  "Engine Size": "1.2",
+                  "Power Description": "Powerful engine"
+                }
+              },
+              {
+                "prompt": "Extract the negotiation details: 'By the way, I find the price a bit expensive. Is there any room for negotiation? I understand your concern, sir. However, our prices are fixed. But let me assure you, the price includes all the features and benefits our company offers. From registration to after-sales service, everything is covered.'",
+                "completion": {
+                  "Price Negotiation": "No room for negotiation",
+                  "Price Includes": "All features and benefits, registration, after-sales service"
+                }
+              },
+              {
+                "prompt": "Extract the test drive confirmation: 'Alright, that's good to know. Thank you. You're welcome, sir. Now, shall we continue with the test drive? Yes, let's do that.'",
+                "completion": {
+                  "Test Drive Confirmation": "Yes, to proceed"
+                }
+              },
+              {
+                "prompt": "Extract the contact number provided: 'Sure, it's 99******90.'",
+                "completion": {
+                  "Contact Number": "99******90"
+                }
+              },
+              {
+                "prompt": "Extract the customer concerns: 'Yes, I had some concerns about the processing fees and other charges.'",
+                "completion": {
+                  "Concerns": "Processing fees and other charges"
+                }
+              },
+              {
+                "prompt": "Extract the paperwork and cost handling information: 'Don't worry. We handle all the paperwork, including RC transfer and any other necessary documents. The company covers these costs, so you won't have to pay extra. We ensure everything is included in the price.'",
+                "completion": {
+                  "Paperwork Handling": "Company handles paperwork, including RC transfer",
+                  "Cost Coverage": "Included in the price"
+                }
+              },
+              {
+                "prompt": "Extract the information about vehicle features and accessories: 'There's no music system. These are all after-market customer accessories. If there are power windows, they won't come in. They're customer accessories. You'll get four power windows.'",
+                "completion": {
+                  "Music System": "None",
+                  "Power Windows": "Four power windows are customer accessories"
+                }
+              },
+              {
+                "prompt": "Extract the vehicle condition details: 'Yes. 32,886 kilometers. The AC is there. There's no music or system. The seat-wise, everything is okay.'",
+                "completion": {
+                  "Mileage": "32,886 kilometers",
+                  "AC Condition": "Working",
+                  "Music System": "None",
+                  "Seats Condition": "Okay"
+                }
+              },
+              {
+                "prompt": "Extract the information about the car's price and additional costs: 'This is a 2010 car. Shift. How much? Single owner. It has been sold for 9 lakhs.'",
+                "completion": {
+                  "Car Year": "2010",
+                  "Price": "9 lakhs",
+                  "Ownership": "Single owner"
+                }
+              },
+              {
+                "prompt": "Extract the warranty details: 'If you have warranty for engine and gearbox, 1 year warranty is there for AC, electronics, fuel system, sensors. 3 months or 5000 kms warranty is there.'",
+                "completion": {
+                  "Engine and Gearbox Warranty": "1 year",
+                  "AC Warranty": "1 year",
+                  "Electronics Warranty": "1 year",
+                  "Fuel System Warranty": "1 year",
+                  "Sensors Warranty": "1 year",
+                  "Additional Warranty": "3 months or 5000 kms"
+                }
+              },
+              {
+                "prompt": "Extract the information about tires and stepney: 'Tires are recently changed, around 70%. If you are using it for family, you can use it for 2 more years. If you are using it for family, for commercial purpose, you can use it for 2 more years. Stepney, is this stepney?'",
+                "completion": {
+                  "Tire Condition": "Recently changed, around 70%",
+                  "Usage Duration": "2 more years for family use",
+                  "Stepney": "Inquired about stepney"
+                }
+              },
+              {
+                "prompt": "Extract the information about the vehicle's inbuilt features and options: 'Speakers? Inbuilt. You have speakers but no infotainment. Yes, speakers are already inbuilt. We have kept it. Speakers are already in the car. You can purchase infotainment box.'",
+                "completion": {
+                  "Speakers": "Inbuilt",
+                  "Infotainment": "Not included, can purchase separately"
+                }
+              },
+              {
+                "prompt": "Extract the vehicle availability and contact information: 'Tomorrow the vehicle will be sold out. Yes. Take your contact number. I will call you. No one will give. It is online. There is an online book. 7090343919.'",
+                "completion": {
+                  "Vehicle Availability": "Will be sold out tomorrow",
+                  "Contact Number": "7090343919",
+                  "Booking Method": "Online"
+                }
+              }
+            ]
+          }      
+  
